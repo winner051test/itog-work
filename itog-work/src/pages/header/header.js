@@ -37,7 +37,7 @@ function Header() {
   };
 
   return (
-    <AppBar position="static" className='test-header' >
+    <AppBar position="static" className='test-header' style={{backgroundColor: 'black'}} >
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <AdbIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} />
