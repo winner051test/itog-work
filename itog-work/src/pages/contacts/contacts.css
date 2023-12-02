@@ -1,0 +1,39 @@
+.contact-container {
+    text-align: center;
+    background-image: url('../../background.png');
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    position: relative;
+  }
+  
+  /* .background-container {
+    background-color: rgb(255, 255, 255);
+    height: 500px;
+    width: 500px;
+    position: absolute;
+    border-radius: 10%;
+  } */
+
+.form {
+    background-color: white;
+    height: 200px;
+    border-radius: 10%;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -100%);
+    padding: 50px;
+}
+
+.button-form {
+    width: 150px;
+}
+
+.input-form {
+    margin-bottom: 50px;
+}
