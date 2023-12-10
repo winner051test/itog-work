@@ -13,9 +13,11 @@ import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 import AdbIcon from '@mui/icons-material/Adb';
 import './header.css';
+import { Link } from "react-router-dom";
 
 const pages = ['Главная', 'Портфолио', 'Галерея', 'Контакты'];
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
+const routerPaths = ['', 'portfolio', 'gallery', 'contacts'];
 
 function Header() {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
@@ -119,12 +121,14 @@ function Header() {
           </Typography>
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
             {pages.map((page, index) => (
+              <Link to={`/${routerPaths[index].toLowerCase()}`} key={index}>
                 <Button
                   onClick={handleCloseNavMenu}
                   sx={{ my: 2, color: 'white', display: 'block' }}
                 >
                   {page}
                 </Button>
+                </Link>
             ))}
           </Box>
 
